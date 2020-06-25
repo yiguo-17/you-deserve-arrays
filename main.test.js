@@ -65,7 +65,7 @@ describe('firstItemIsNumber', () => {
   })
 
   it(`returns false if the first item is a string, even if its value is 'number'`, () => {
-    expect(firstItemIsNumber(['not a number'])).toBe(false);
+    expect(firstItemIsNumber(['number', 'but', 'secretly', 'a', 'string'])).toBe(false);
   })
 
   it('returns false if the first item is a boolean', () => {
